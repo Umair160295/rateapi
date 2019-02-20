@@ -1,0 +1,31 @@
+{
+  "name": "rateapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engine": {
+    "node": "9.6.0",
+    "npm": "5.6.0"
+  },
+  "scripts": {
+    "preinstall": "npm install pm2 -g && pm2 install pm2-logrotate",
+    "start": "pm2-runtime server.js -i 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "cloudinary": "^1.11.0",
+    "compression": "^1.7.3",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "helmet": "^3.15.1",
+    "mongoose": "^5.0.12",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
